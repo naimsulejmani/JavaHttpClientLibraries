@@ -14,12 +14,12 @@ public class Topic {
     public Topic(@JsonProperty("id") int id,
                  @JsonProperty("name") String name,
                  @JsonProperty("description") String description,
-                 @JsonProperty("registrationDate") LocalDate registrationDate,
+                 @JsonProperty("registrationDate") String registrationDate,
                  @JsonProperty("active") boolean active) {
         this.id = id;
         this.name = name;
         this.description = description;
-        this.registrationDate = registrationDate;
+        this.registrationDate = LocalDate.parse(registrationDate);
         this.active = active;
     }
 
@@ -49,7 +49,7 @@ public class Topic {
                 "id:" + id +
                 ", name:'" + name + '\'' +
                 ", description:'" + description + '\'' +
-                ", registrationDate:" + registrationDate +
+                ", registrationDate:'" + registrationDate + '\'' +
                 ", active:" + active +
                 '}';
     }
