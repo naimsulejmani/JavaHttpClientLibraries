@@ -43,14 +43,14 @@ public class Topic {
         return active;
     }
 
-    @Override
-    public String toString() {
-        return "{" +
-                "id:" + id +
-                ", name:'" + name + '\'' +
-                ", description:'" + description + '\'' +
-                ", registrationDate:'" + registrationDate + '\'' +
-                ", active:" + active +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "{" +
+//                "id:" + id +
+//                ", name:'" + name + '\'' +
+//                ", description:'" + description + '\'' +
+//                ", registrationDate:'" + registrationDate + '\'' +
+//                ", active:" + active +
+//                '}';
+//    }
 }
